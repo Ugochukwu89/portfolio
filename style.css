@@ -250,3 +250,10 @@ nav a:hover {
 #recommendation-form button:hover {
     background: #34495e;
 }
+
+/* Fix for new skills with emojis */
+.skill-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}

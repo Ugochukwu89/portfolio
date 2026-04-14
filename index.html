@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="container">
+            <!-- Styled name on top-left -->
+            <h1 class="logo">Ugochukwu Oru</h1>
+            <!-- Navigation bar with 4 options -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home button to scroll to top -->
+    <button class="home-btn" onclick="window.scrollTo(0, 0)"><i class="fas fa-home"></i></button>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Profile image -->
+            <img src="/Users/ugochukwuoru/Pictures/Photos Library.photoslibrary/resources/derivatives/E/EBD74F68-3D9A-4338-BDC4-5023467423CC_1_105_c.jpeg" alt="Profile photo of Ugochukwu Oru, a smiling young professional wearing a collared shirt, against a neutral background" class="profile-img">
+            <h2>About Me</h2>
+            <!-- Summary text about the learner -->
+            <p>I'm a passionate web developer with 3 years of experience in creating responsive and user-friendly websites. I love learning new technologies and solving problems.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <!-- Skills with logos and text -->
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- 3 different projects in specified format -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Built a full-stack e-commerce platform using HTML, CSS, and JavaScript with cart functionality.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>Created a weather application using API integration to fetch real-time weather data.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Task Manager</h3>
+                    <p>Developed a task management app with local storage to save and manage daily tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="recommendations">
+        <div class="container">
+            <h2>Recommendations</h2>
+            <!-- List of recommendations that can be dynamically updated -->
+            <div id="recommendations-list">
+                <div class="recommendation-card">
+                    <p>"John is an excellent developer with great attention to detail."</p>
+                    <p><strong>- Sarah Smith</strong></p>
+                </div>
+                <div class="recommendation-card">
+                    <p>"Very talented and easy to work with. Highly recommended!"</p>
+                    <p><strong>- Mike Johnson</strong></p>
+                </div>
+                <div class="recommendation-card">
+                    <p>"Great problem solver and quick learner."</p>
+                    <p><strong>- Emma Wilson</strong></p>
+                </div>
+            </div>
+            <!-- Form to submit new recommendations -->
+            <form id="recommendation-form">
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Your Recommendation" required></textarea>
+                <button type="submit">Submit Recommendation</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

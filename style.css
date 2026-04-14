@@ -281,3 +281,12 @@ nav a:hover {
     margin-bottom: 16px;
     font-size: 22px;
 }
+.skill-icon {
+    font-size: 62px !important;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.15);
+}

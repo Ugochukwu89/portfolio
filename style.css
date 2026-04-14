@@ -129,27 +129,30 @@ nav a:hover {
 /* Individual skill card styling with logo and text */
 .skill-card {
     background: white;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 35px 20px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(44, 62, 80, 0.15);
+    border-color: #2c3e50;
 }
 
-.skill-card i {
-    font-size: 48px;
-    color: #2c3e50;
-    margin-bottom: 15px;
+.skill-icon {
+    font-size: 52px;
+    margin-bottom: 18px;
+    display: block;
 }
 
 .skill-card p {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
+    color: #2c3e50;
 }
 
 /* Projects section styling - Task 5 */
@@ -256,4 +259,25 @@ nav a:hover {
     font-size: 48px;
     display: block;
     margin-bottom: 15px;
+}
+
+/* Improved Project Cards */
+.project-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(44, 62, 80, 0.15);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-size: 22px;
 }
